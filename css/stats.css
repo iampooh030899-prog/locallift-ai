@@ -1,0 +1,25 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 90px 8%;
+  background: #081327;
+}
+
+.stat {
+  text-align: center;
+  background: #132448;
+  padding: 40px;
+  border-radius: 18px;
+}
+
+.stat h2 {
+  color: #37b6ff;
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  color: #bfc8d8;
+  font-size: 18px;
+}
