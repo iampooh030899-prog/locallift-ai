@@ -1,0 +1,50 @@
+:root {
+  --max-width: 1120px;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .solution-grid,
+  .stats-grid,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar .container {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar .container,
+  nav,
+  .hero-buttons,
+  .trust-bar {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .hero,
+  .features,
+  .how-it-works,
+  .pricing,
+  .solution-section {
+    padding: 80px 0;
+  }
+
+  .trust-bar {
+    border-radius: 1rem;
+  }
+
+  .hero h1,
+  .section-heading h2,
+  .solution-copy h2 {
+    font-size: 2rem;
+  }
+}

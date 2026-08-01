@@ -1,0 +1,19 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content,
+.hero-card,
+.feature-card,
+.step-card,
+.pricing-card,
+.solution-card {
+  animation: fadeUp 0.7s ease both;
+}

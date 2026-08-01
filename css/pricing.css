@@ -1,0 +1,13 @@
+.pricing {
+  padding: 2rem;
+  text-align: center;
+}
+
+.pricing .card {
+  display: inline-block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  margin-top: 1rem;
+}
