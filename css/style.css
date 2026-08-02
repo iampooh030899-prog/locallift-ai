@@ -325,33 +325,16 @@ nav a,
   gap: 1rem;
 }
 
-.highlight-grid {
-  margin-top: 0.35rem;
-}
-
-.highlight-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 18px;
-  padding: 1.7rem;
-  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.14);
+.trust-intro {
+  margin: 0 0 1rem;
   text-align: center;
+  color: var(--text-main);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 700;
 }
 
-.highlight-icon {
-  font-size: 1.7rem;
-  margin: 0 0 0.65rem;
-}
-
-.highlight-card h3 {
-  margin: 0 0 0.55rem;
-  color: #f8fafc;
-  font-size: 1.45rem;
-}
-
-.highlight-card p {
-  margin: 0;
-  color: #cbd5e1;
+.trust-metrics-grid {
+  margin-top: 0.45rem;
 }
 
 .solution-section {
