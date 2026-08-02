@@ -24,8 +24,7 @@
 @media (max-width: 760px) {
   .navbar .container,
   nav,
-  .hero-buttons,
-  .trust-bar {
+  .hero-buttons {
     flex-direction: column;
     display: flex;
   }
@@ -36,10 +35,6 @@
   .pricing,
   .solution-section {
     padding: 88px 0;
-  }
-
-  .trust-bar {
-    border-radius: 1rem;
   }
 
   .hero h1,
