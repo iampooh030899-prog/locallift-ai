@@ -384,6 +384,15 @@ nav a,
   box-shadow: 0 12px 28px rgba(2, 6, 23, 0.16);
 }
 
+.step-card {
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
 .workflow-meta {
   margin: 0 0 0.8rem;
   color: #93c5fd;
