@@ -10,6 +10,10 @@
     grid-template-columns: 1fr;
   }
 
+  .workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .navbar .container {
     flex-wrap: wrap;
   }
@@ -41,5 +45,9 @@
   .section-heading h2,
   .solution-copy h2 {
     font-size: 2.4rem;
+  }
+
+  .workflow-card {
+    padding: 1.2rem;
   }
 }
