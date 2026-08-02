@@ -15,7 +15,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
   background: linear-gradient(135deg, var(--bg-dark), var(--accent-strong));
   color: var(--text-main);
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -133,7 +133,7 @@ nav a,
 }
 
 .hero h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(2.7rem, 5vw, 4.4rem);
   margin: 0 0 1.4rem;
   line-height: 1.1;
@@ -154,11 +154,19 @@ nav a,
 }
 
 .hero-card {
-  background: rgba(17, 24, 39, 0.76);
-  border: 1px solid var(--border);
+  background: linear-gradient(160deg, rgba(15, 23, 42, 0.74), rgba(15, 23, 42, 0.56));
+  border: 1px solid rgba(148, 163, 184, 0.26);
   border-radius: 20px;
-  padding: 1.8rem;
-  box-shadow: 0 14px 36px rgba(2, 6, 23, 0.24);
+  padding: 2rem;
+  box-shadow: 0 18px 42px rgba(2, 6, 23, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(2, 6, 23, 0.22), 0 0 40px rgba(59, 130, 246, 0.12);
 }
 
 .dashboard-panel {
@@ -176,7 +184,7 @@ nav a,
 
 .dashboard-rows {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.62rem;
 }
 
 .dashboard-row {
@@ -184,22 +192,32 @@ nav a,
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem 0;
-  border-top: 1px solid rgba(148, 163, 184, 0.22);
-  color: #cbd5e1;
-  font-size: 0.95rem;
+  padding: 0.72rem 0.8rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.46), rgba(30, 41, 59, 0.3));
+  color: #d6deeb;
+  font-size: 0.94rem;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.dashboard-row:hover {
+  transform: translateX(4px);
+  border-color: rgba(96, 165, 250, 0.44);
+  background: linear-gradient(145deg, rgba(37, 99, 235, 0.26), rgba(30, 41, 59, 0.35));
 }
 
 .dashboard-row strong {
-  color: #e2e8f0;
+  color: #eaf2ff;
   font-weight: 700;
   text-align: right;
 }
 
 .conversation-title {
-  margin: 1rem 0 0.9rem;
-  color: #f8fafc;
-  font-size: 1.05rem;
+  margin: 0 0 1rem;
+  color: #e2e8f0;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
 }
 
 .conversation-divider {
@@ -371,7 +389,7 @@ nav a,
 }
 
 .workflow-section {
-  padding: 2.5rem 0 2rem;
+  padding: 3rem 0 2.4rem;
 }
 
 .workflow-title {
@@ -384,18 +402,28 @@ nav a,
   margin: 0;
 }
 
+.workflow-intro {
+  margin: 0.9rem auto 0;
+  max-width: 700px;
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-size: 1.04rem;
+}
+
 .workflow-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.15rem;
 }
 
 .workflow-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 18px;
-  padding: 1.4rem;
-  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.16);
+  background: linear-gradient(160deg, rgba(15, 23, 42, 0.74), rgba(15, 23, 42, 0.56));
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 20px;
+  padding: 1.55rem;
+  box-shadow: 0 14px 30px rgba(2, 6, 23, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .step-card {
@@ -404,20 +432,21 @@ nav a,
 
 .step-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 40px rgba(59, 130, 246, 0.12);
+  box-shadow: 0 16px 32px rgba(2, 6, 23, 0.2), 0 0 40px rgba(59, 130, 246, 0.12);
 }
 
 .workflow-meta {
-  margin: 0 0 0.8rem;
-  color: #93c5fd;
-  font-size: 0.92rem;
+  margin: 0 0 0.95rem;
+  color: #7dd3fc;
+  font-size: 1.15rem;
   line-height: 1.5;
 }
 
 .workflow-card h3 {
-  margin: 0 0 0.7rem;
+  margin: 0 0 0.65rem;
   color: #f8fafc;
-  font-size: 1.22rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
 }
 
 .workflow-card p {
@@ -643,6 +672,72 @@ nav a,
   margin: 0;
   color: #666;
   line-height: 1.7;
+}
+
+.action-section {
+  padding: 5rem 0 4rem;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(56, 189, 248, 0.14), transparent 50%),
+    radial-gradient(circle at 80% 85%, rgba(59, 130, 246, 0.12), transparent 46%),
+    linear-gradient(180deg, #081326, #071022);
+}
+
+.action-title {
+  margin-bottom: 2.25rem;
+}
+
+.action-title h2,
+.action-title p,
+.action-title span {
+  color: #f8fafc;
+}
+
+.action-title p {
+  color: #bfccdf;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.action-card {
+  background: linear-gradient(160deg, rgba(15, 23, 42, 0.74), rgba(15, 23, 42, 0.56));
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 20px;
+  padding: 1.55rem;
+  box-shadow: 0 14px 30px rgba(2, 6, 23, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(2, 6, 23, 0.2), 0 0 40px rgba(59, 130, 246, 0.12);
+  border-color: rgba(96, 165, 250, 0.42);
+}
+
+.action-card h3 {
+  margin: 0 0 1rem;
+  color: #f8fafc;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.22rem;
+}
+
+.conversation-card .chat-line {
+  margin-bottom: 0.55rem;
+}
+
+.action-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.action-cta-wrap {
+  text-align: center;
 }
 
 .journey-arrow {
