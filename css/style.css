@@ -141,8 +141,7 @@ nav a,
 }
 
 .hero p,
-.content-section p,
-.trust-label {
+.content-section p {
   color: var(--text-muted);
   font-size: 1.05rem;
   line-height: 1.7;
@@ -326,28 +325,33 @@ nav a,
   gap: 1rem;
 }
 
-.trust-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  gap: 1rem;
-  padding: 1.2rem 1.4rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.06);
-  margin-bottom: 1.2rem;
+.highlight-grid {
+  margin-top: 0.35rem;
 }
 
-.trust-label {
-  margin: 0;
-  font-weight: 600;
-  color: #e2e8f0;
+.highlight-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 1.7rem;
+  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.14);
   text-align: center;
 }
 
-.trust-stats {
-  width: 100%;
+.highlight-icon {
+  font-size: 1.7rem;
+  margin: 0 0 0.65rem;
+}
+
+.highlight-card h3 {
+  margin: 0 0 0.55rem;
+  color: #f8fafc;
+  font-size: 1.45rem;
+}
+
+.highlight-card p {
+  margin: 0;
+  color: #cbd5e1;
 }
 
 .solution-section {
