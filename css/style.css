@@ -197,13 +197,28 @@ nav a,
 }
 
 .conversation-title {
-  margin: 1.1rem 0 0.8rem;
+  margin: 1rem 0 0.9rem;
   color: #f8fafc;
   font-size: 1.05rem;
 }
 
+.conversation-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.7), transparent);
+  margin: 0.35rem 0 0.95rem;
+}
+
+.chat-speaker {
+  margin: 0.8rem 0 0.35rem;
+  color: #bfdbfe;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .chat-line {
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.45rem;
   padding: 0.6rem 0.75rem;
   border-radius: 14px;
   background: rgba(148, 163, 184, 0.14);
@@ -390,7 +405,7 @@ nav a,
 
 .step-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.12);
 }
 
 .workflow-meta {
